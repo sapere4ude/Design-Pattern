@@ -1,10 +1,11 @@
-// Bridge
+// Bridge Pattern
 
 // 구현부에서 추상층을 분리하여 각자 독립적으로 변형할 수 있게 하는 패턴
 // 거대한 클래스 or 밀접하게 관련된 클래스들을 분리하여 서로 독립적인 수정/확장이 가능하게 하는 패턴
 
 import Foundation
 
+// 최상위 타입
 protocol RemoteControl {
     var device: Device { get set }
     func togglePower()
@@ -17,9 +18,23 @@ protocol Device {
 
 struct BasicRempteControl: RemoteControl {
     var device: Device
+    
     func togglePower() {
         device.turnOn()
     }
+    func mute() {
+        device.setVolume(to: 0)
+    }
+}
+
+struct AdvancedRemoteControl: RemoteControl {
+    var device: Device
+    
+    func togglePower() {
+        device.turnOn()
+    }
+    
+    // RemoteControl 프로토콜에는 없던 새로운 메서드 추가
     func mute() {
         device.setVolume(to: 0)
     }
