@@ -41,4 +41,3 @@ struct Computer: Facade {
 
 let computer = Computer()
 computer.work()
-
