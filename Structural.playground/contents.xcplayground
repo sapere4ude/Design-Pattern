@@ -7,5 +7,6 @@
         <page name='Flyweight'/>
         <page name='Proxy'/>
         <page name='Composite'/>
+        <page name='Adapter'/>
     </pages>
 </playground>
