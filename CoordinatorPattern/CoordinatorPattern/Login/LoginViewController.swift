@@ -8,7 +8,13 @@
 import Foundation
 import UIKit
 
+protocol LoginViewControllerDelegate {
+    func login()
+}
+
 class LoginViewController: UIViewController {
+    
+    var delegate: LoginViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +32,6 @@ class LoginViewController: UIViewController {
     
     @objc
     func loginButtonDidTap() {
-        
+        self.delegate?.login()
     }
 }

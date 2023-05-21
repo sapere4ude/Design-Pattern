@@ -8,9 +8,15 @@
 import Foundation
 import UIKit
 
-class LoginCoordinator: Coordinator {
+protocol LoginCoordinatorDelegate {
+    func didLoggedIn(_ coordinator: LoginCoordinator)
+}
+
+
+class LoginCoordinator: Coordinator, LoginViewControllerDelegate {
     
     var childCoordinators: [Coordinator] = []
+    var delegate: LoginCoordinatorDelegate?
     
     private var navigationController: UINavigationController!
     
@@ -21,6 +27,11 @@ class LoginCoordinator: Coordinator {
     func start() {
         let viewController = LoginViewController()
         viewController.view.backgroundColor = .brown
+        viewController.delegate = self
         self.navigationController?.viewControllers = [viewController]
+    }
+    
+    func login() {
+        self.delegate?.didLoggedIn(self)
     }
 }
