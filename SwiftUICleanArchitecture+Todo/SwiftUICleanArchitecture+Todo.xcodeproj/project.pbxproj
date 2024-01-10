@@ -16,8 +16,6 @@
 		BE0586BE2AAD5F95007F0C55 /* TodoListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0586BD2AAD5F95007F0C55 /* TodoListRepository.swift */; };
 		BE0586C42AAD607C007F0C55 /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0586C32AAD607C007F0C55 /* TodoListViewModel.swift */; };
 		BE0586CE2AAD6182007F0C55 /* SwiftUICleanArchitecture_TodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0586CD2AAD6182007F0C55 /* SwiftUICleanArchitecture_TodoTests.swift */; };
-		BE0586E42AB07457007F0C55 /* CoreDataTodoListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0586E32AB07457007F0C55 /* CoreDataTodoListRepository.swift */; };
-		BE0586E72AB076E3007F0C55 /* Todo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE0586E52AB076E3007F0C55 /* Todo.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +40,6 @@
 		BE0586C32AAD607C007F0C55 /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
 		BE0586CB2AAD6182007F0C55 /* SwiftUICleanArchitecture+TodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUICleanArchitecture+TodoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE0586CD2AAD6182007F0C55 /* SwiftUICleanArchitecture_TodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICleanArchitecture_TodoTests.swift; sourceTree = "<group>"; };
-		BE0586E32AB07457007F0C55 /* CoreDataTodoListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTodoListRepository.swift; sourceTree = "<group>"; };
-		BE0586E62AB076E3007F0C55 /* TodoData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				BE0586BD2AAD5F95007F0C55 /* TodoListRepository.swift */,
-				BE0586E32AB07457007F0C55 /* CoreDataTodoListRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -166,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				BE0586A72AAD5EED007F0C55 /* ContentView.swift */,
-				BE0586E52AB076E3007F0C55 /* Todo.xcdatamodeld */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,9 +276,7 @@
 				BE0586B82AAD5F3D007F0C55 /* Todo.swift in Sources */,
 				BE0586A82AAD5EED007F0C55 /* ContentView.swift in Sources */,
 				BE0586C42AAD607C007F0C55 /* TodoListViewModel.swift in Sources */,
-				BE0586E42AB07457007F0C55 /* CoreDataTodoListRepository.swift in Sources */,
 				BE0586BE2AAD5F95007F0C55 /* TodoListRepository.swift in Sources */,
-				BE0586E72AB076E3007F0C55 /* Todo.xcdatamodeld in Sources */,
 				BE0586A62AAD5EED007F0C55 /* SwiftUICleanArchitecture_TodoApp.swift in Sources */,
 				BE0586BC2AAD5F6A007F0C55 /* TodoListUseCase.swift in Sources */,
 			);
@@ -556,19 +548,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		BE0586E52AB076E3007F0C55 /* Todo.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				BE0586E62AB076E3007F0C55 /* TodoData.xcdatamodel */,
-			);
-			currentVersion = BE0586E62AB076E3007F0C55 /* TodoData.xcdatamodel */;
-			path = Todo.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = BE05869A2AAD5EED007F0C55 /* Project object */;
 }
